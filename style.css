@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* grid for the entire page */
+body {
+    background-image: url('https://i.gifer.com/133C.gif');
+    display: grid;
+    grid-template-rows: 15% 85%;
+    margin: 20px 100px;
+    font-family: 'Abel', sans-serif;
+}
+
+#titleHeader {
+    font-size: 30px;
+    text-align: center;
+    color : white;
+    font-family: 'VT323', monospace;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#inputDiv {
+    grid-row: 1;
+    align-self: center;
+    text-align: center;
+}
+
+#encryptDecryptButtons{
+    grid-row: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#encryptDecryptButtons button{
+    width: 25%;
+    height: 35%;
+    margin: 4%;
+    border-radius: 35px;
+    font-size: 40px;
+    font-family: 'VT323', monospace;
+
+}
+
+#encryptDecryptButtons button:hover{
+    background-color: black;
+    border: solid 1px green;
+    box-shadow: 0 0 5pt 2pt green;
+    color: green;
+} 
+
+#keys {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    box-shadow: 0 0 5pt 2pt white;
+}
+#answerDiv {
+    grid-row: 3;
+    align-self: center;
+    text-align: center;
+}
+
+textarea { 
+    resize: none;
+    color: white;
+    background-color: black;
+    border: solid 1px green;
+    box-shadow: 0 0 5pt 2pt green;
+    border-radius: 35px;
+    padding: 20px;
+    font-size: 20px;
+    width: 80%;
+    height: 40%;
+}
+
+textarea:focus {
+    outline : none;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    body {
+        margin: 20px 20px;
+    }
+
+    #titleHeader {
+        font-size: 24px;
+    }
+
+    #encryptDecryptButtons button {
+        width: 50%; 
+        height: 50%; 
+        margin: 2%;
+        font-size: 30px; 
+    }
+
+    #keys {
+        width: 60px;
+    }
+
+    textarea {
+        font-size: 16px;
+        width: 90%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 20px 10px;
+    }
+
+    #titleHeader {
+        font-size: 20px;
+    }
+
+    #encryptDecryptButtons button {
+        width: 60%;
+        height: 50%;
+        margin: 1%;
+    }
+
+    #keys {
+        width: 60%;
+    }
+
+    textarea {
+        font-size: 14px;
+        width: 100%;
+        height: 60%;
+    }
+}

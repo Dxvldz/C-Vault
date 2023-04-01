@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This website is used to encrypt and decrypt code/messages
+    AUTHORS : David Hang, Kevin Wu, Edouard Duguay, Antoine Labbe -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="style.css">
+    <script src="script.js" defer>
+    </script>
+    <title>C-Vault</title>
+</head>
+
+<body>
+    <header>
+        <div id="titleHeader">
+            <h1>
+                C-Vault
+            </h1>
+        </div>
+    </header>
+    <main>
+        <div id="inputDiv">
+            <form>
+                <textarea id="userInput" rows="15" cols="100" placeholder="Insert message/Code" ></textarea>
+            </form>
+        </div>
+
+        <div id="encryptDecryptButtons">
+            <button id="enC" type="button">
+                Encrypt
+            </button>
+            <select name="keys" id="keys">
+                <option value="1">Key 1</option>
+                <option value="2">Key 2</option>
+                <option value="3">Key 3</option>
+                <option value="4">Key 4</option>
+                <option value="5">Key 5</option>
+                <option value="6">Key 6</option>
+                <option value="7">Key 7</option>
+                <option value="8">Key 8</option>
+                <option value="9">Key 9</option>
+                <option value="10">Key 10</option>
+                <option value="11">Key 11</option>
+                <option value="12">Key 12</option>
+                <option value="13">Key 13</option>
+            </select>
+            <button id="deC" type="button">
+                Decrypt
+            </button>
+        </div>
+
+        <div id="answerDiv">
+            <textarea id="answer" rows="15" cols="100" disabled> Output </textarea>
+        </div>
+    </main>
+</body>
+</html>
